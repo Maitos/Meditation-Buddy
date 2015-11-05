@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "MBDataAttendant.h"
 
 @interface AboutViewController ()
 
@@ -21,6 +22,28 @@
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(emailMe)];
     [tap setNumberOfTapsRequired:1];
     [self.lblEmail addGestureRecognizer:tap];
+    
+    if(IS_IPHONE_4_OR_LESS || IS_IPAD) {
+        self.vwBackBottomConstraint.constant = 20;
+        
+        self.lblName.font = [self.lblName.font fontWithSize:16];
+        self.lblBlurb.font = [self.lblBlurb.font fontWithSize:10];
+        self.lblEmail.font = [self.lblEmail.font fontWithSize:10];
+        
+        if(IS_RETINA) {
+            self.vwBackBottomConstraint.constant = 0;
+            self.lblBlurpTop.constant = 5;
+            self.lblNameHeight.constant = 15;
+        }
+        
+    } else if(IS_IPHONE_5) {
+        self.vwBackBottomConstraint.constant = -20;
+        self.lblName.font = [self.lblName.font fontWithSize:20];
+        
+        self.lblEmail.font = [self.lblEmail.font fontWithSize:12];
+    } else if(IS_IPHONE_6) {
+        self.vwBackBottomConstraint.constant = 120;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

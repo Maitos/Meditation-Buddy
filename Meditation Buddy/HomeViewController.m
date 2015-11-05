@@ -60,7 +60,11 @@ NSString* meditateForTemplate = @"MEDITATE FOR %@ MINUTES";
     if(!IS_IPHONE_6P) {
         //no scroll view on 6plus
         CGRect lowestFrame = self.bMeditate.frame;
-        self.svContent.contentSize = CGSizeMake(self.view.frame.size.width, lowestFrame.origin.y + (IS_IPHONE_5 ? 125 : 25));
+        
+        double contentOffset = IS_IPHONE_4_OR_LESS || IS_IPAD ? 210 : IS_IPHONE_5 ? 125 : 25;
+        self.svContent.contentSize = CGSizeMake(self.view.frame.size.width, lowestFrame.origin.y + contentOffset);
+        
+        
     } else {
         self.vwMeditate.TailHeight = 10;
         self.bMeditate.TailHeight = 10;

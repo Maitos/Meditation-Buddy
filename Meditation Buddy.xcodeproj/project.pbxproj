@@ -192,7 +192,6 @@
 		4267A2F31BAC1E5B00D5F957 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4267A2F21BAC1E5B00D5F957 /* AudioToolbox.framework */; };
 		4267A2F51BAC1E6300D5F957 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4267A2F41BAC1E6300D5F957 /* AVFoundation.framework */; };
 		4267A2FA1BB2AFCD00D5F957 /* MBSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267A2F91BB2AFCD00D5F957 /* MBSound.m */; };
-		427CD3401BEB36FF00A39BC7 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
 		42845ED51B9828710078BA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42845ED41B9828710078BA26 /* main.m */; };
 		42845ED81B9828710078BA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42845ED71B9828710078BA26 /* AppDelegate.m */; };
 		42845EDB1B9828710078BA26 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42845EDA1B9828710078BA26 /* HomeViewController.m */; };
@@ -206,6 +205,7 @@
 		42845F051B9C09850078BA26 /* MeditateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42845F041B9C09850078BA26 /* MeditateViewController.m */; };
 		428A81021BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A80FF1BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m */; };
 		428A81031BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A81011BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m */; };
+		429A1E421BEB4CA9005B0DE9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
 		42A3A5E61BDB9357009927C7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C426191BD1CF5F003DD7C8 /* Fabric.framework */; };
 		42C4260D1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
 		42C4260E1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
@@ -663,7 +663,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				427CD3401BEB36FF00A39BC7 /* GoogleMobileAds.framework in Frameworks */,
+				429A1E421BEB4CA9005B0DE9 /* GoogleMobileAds.framework in Frameworks */,
 				42C9137A1BDB156C005BD2AA /* StoreKit.framework in Frameworks */,
 				4267A2F51BAC1E6300D5F957 /* AVFoundation.framework in Frameworks */,
 				4267A2F31BAC1E5B00D5F957 /* AudioToolbox.framework in Frameworks */,
@@ -1863,6 +1863,8 @@
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 				);
 				INFOPLIST_FILE = "Meditation Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1882,6 +1884,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
