@@ -28,14 +28,7 @@
     
     if(self.meditateDuration) {
         self.lblMeditatingFor.text = [NSString stringWithFormat:@"MEDITATING FOR %@ MINUTES", self.meditateDuration];
-        
-        NSMethodSignature* sig = [self methodSignatureForSelector:@selector(startMeditationWithDuration:)];
-        NSInvocation* invoc = [NSInvocation invocationWithMethodSignature:sig];
-        invoc.target = self;
-        invoc.selector = @selector(startMeditationWithDuration:);
-        [invoc setArgument:&_meditateDuration atIndex:2];
-
-        [NSTimer scheduledTimerWithTimeInterval:1 invocation:invoc repeats:NO];
+        [self startMeditationWithDuration:self.meditateDuration];
     }
     
     UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(bFinishWasPressed)];
