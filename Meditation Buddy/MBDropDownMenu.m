@@ -131,7 +131,7 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
 
 #pragma mark SHOW MENU
 -(void)showMenu {
-    self.dropDownMenu = [[MBView alloc] initWithFrame:CGRectMake(self.frame.origin.x - 3, self.frame.origin.y + self.frame.size.height, 130, self.MenuItemHeight * self.items.count)];
+    self.dropDownMenu = [[MBView alloc] initWithFrame:CGRectMake(self.frame.origin.x - 3, self.frame.origin.y + self.frame.size.height, 160, self.MenuItemHeight * self.items.count)];
     self.dropDownMenu.backgroundColor =  [UIColor whiteColor];
     self.dropDownMenu.BorderRadius = 3;
     self.dropDownMenu.TailHeight = 10;

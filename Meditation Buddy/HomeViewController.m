@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "MeditateViewController.h"
 #import "MBDataAttendant.h"
+#import "MBProgressHUD.h"
 
 int AD_COUNT = 3;
 NSString* DEFAULTS_DISABLE_ADS_KEY = @"adsDisabled";
@@ -34,6 +35,8 @@ NSString* meditateForTemplate = @"MEDITATE FOR %@ MINUTES";
     int count = (int)[defaults integerForKey:@"adCounter"];
     
     if(count >= AD_COUNT) {
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        
         [self.interstitial loadAd];
         [defaults setInteger:0 forKey:@"adCounter"];
         
@@ -128,6 +131,7 @@ NSString* meditateForTemplate = @"MEDITATE FOR %@ MINUTES";
         [self.bSideMenu addMenuItem:@"Thank You" imageNamed:@"heart-b.png"];
     } else {
         [self.bSideMenu addMenuItem:@"Remove Ads" imageNamed:@"noAds.gif"];
+        [self.bSideMenu addMenuItem:@"Restore Purchase" imageNamed:@"noAds.gif"];
     }
     
 }
@@ -151,11 +155,15 @@ NSString* meditateForTemplate = @"MEDITATE FOR %@ MINUTES";
         [self performSegueWithIdentifier:@"about" sender:nil];
     } else if([item isEqualToString:@"Remove Ads"]) {
         [self disableAds];
+    } else if([item isEqualToString:@"Restore Purchase"]) {
+        [MBAppPurchase restorePreviousPurchaseWithDelegate:self];
     }
 }
 
 #pragma mark <MPInterstitialAdControllerDelegate>
 - (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
     if (interstitial.ready) {
         [self.bSideMenu hideMenu];
         [interstitial showFromViewController:self];

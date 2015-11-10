@@ -11,7 +11,8 @@
 #define MBDisableAdsIdentifier @"com.MMarshall.MeditationBuddy.DisableAds"
 
 typedef enum {
-    DisableAds
+    DisableAds,
+    RestoreDisableAds
 } MBAppPurchaseType;
 
 @protocol MBAppPurchaseDelegate <NSObject>
@@ -26,5 +27,6 @@ typedef enum {
 @property (nonatomic, weak) id<MBAppPurchaseDelegate> delegate;
 
 +(void)performAppPurchase: (MBAppPurchaseType) type withDelegate:(id<MBAppPurchaseDelegate>)delegate;
++(void)restorePreviousPurchaseWithDelegate:(id<MBAppPurchaseDelegate>)delegate;
 
 @end

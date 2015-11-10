@@ -7,7 +7,7 @@
 //
 
 #import "MBAppPurchase.h"
-#import "MBProgressHUD.h";
+#import "MBProgressHUD.h"
 
 static MBAppPurchase* _singleton;
 @interface MBAppPurchase()
@@ -18,6 +18,14 @@ static MBAppPurchase* _singleton;
 
 @implementation MBAppPurchase
 
++(void)restorePreviousPurchaseWithDelegate:(id<MBAppPurchaseDelegate>)delegate {
+    _singleton = [MBAppPurchase new];
+    _singleton.delegate = delegate;
+    _singleton.purchaseType = DisableAds;
+    
+    [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication] keyWindow] animated:YES];
+    [_singleton restore];
+}
 +(void)performAppPurchase: (MBAppPurchaseType) type withDelegate:(id<MBAppPurchaseDelegate>)delegate
  {
     NSLog(@"User requests app purchase %u", type);
@@ -63,6 +71,7 @@ static MBAppPurchase* _singleton;
 }
 
 - (IBAction) restore{
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     //this is called when the user restores purchases, you should hook this up to a button
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }

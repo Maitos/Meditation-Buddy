@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420E7B6D1BF1E74F00532036 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
 		42177FE21BE9FCD400B2994C /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E711BE9FCD400B2994C /* MPBannerAdManager.m */; };
 		42177FE31BE9FCD400B2994C /* MPBannerCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E741BE9FCD400B2994C /* MPBannerCustomEventAdapter.m */; };
 		42177FE41BE9FCD400B2994C /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E761BE9FCD400B2994C /* MPBaseBannerAdapter.m */; };
@@ -205,7 +206,6 @@
 		42845F051B9C09850078BA26 /* MeditateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42845F041B9C09850078BA26 /* MeditateViewController.m */; };
 		428A81021BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A80FF1BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m */; };
 		428A81031BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A81011BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m */; };
-		429A1E421BEB4CA9005B0DE9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
 		42A3A5E61BDB9357009927C7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C426191BD1CF5F003DD7C8 /* Fabric.framework */; };
 		42C4260D1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
 		42C4260E1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
@@ -663,7 +663,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429A1E421BEB4CA9005B0DE9 /* GoogleMobileAds.framework in Frameworks */,
+				420E7B6D1BF1E74F00532036 /* GoogleMobileAds.framework in Frameworks */,
 				42C9137A1BDB156C005BD2AA /* StoreKit.framework in Frameworks */,
 				4267A2F51BAC1E6300D5F957 /* AVFoundation.framework in Frameworks */,
 				4267A2F31BAC1E5B00D5F957 /* AudioToolbox.framework in Frameworks */,
@@ -1865,6 +1865,10 @@
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 				);
 				INFOPLIST_FILE = "Meditation Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1884,6 +1888,10 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
