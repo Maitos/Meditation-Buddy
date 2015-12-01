@@ -9,7 +9,6 @@
 #import "MBData.h"
 
 static MBData* singleton;
-
 @implementation MBData
 
 #pragma mark INITIALIZATION

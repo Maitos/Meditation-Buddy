@@ -16,6 +16,7 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
 @interface MBDropDownMenu()
 
 @property (nonatomic, strong) MBView* dropDownMenu;
+@property (nonatomic, strong) UITapGestureRecognizer* loseFocusTap;
 
 @end
 
@@ -30,21 +31,12 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
     return self;
 }
 
--(instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if(self) {
-        [self initialize];
-    }
-    return self;
-}
-
 -(void)initialize {
     self.items = [NSMutableArray new];
     self.MenuItemHeight = 50;
     
-    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleMenu)];
-    [tap setNumberOfTapsRequired:1];
-    [self addGestureRecognizer:tap];
+    [self setTarget:self];
+    [self setAction:@selector(toggleMenu)];
 }
 
 #pragma mark FUNCTIONALITY
@@ -131,11 +123,19 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
 
 #pragma mark SHOW MENU
 -(void)showMenu {
-    self.dropDownMenu = [[MBView alloc] initWithFrame:CGRectMake(self.frame.origin.x - 3, self.frame.origin.y + self.frame.size.height, 160, self.MenuItemHeight * self.items.count)];
+    if(!self.loseFocusTap) {
+        self.loseFocusTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideMenu)];
+        self.loseFocusTap.numberOfTapsRequired = 1;
+        self.loseFocusTap.delegate = self;
+        
+        [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:self.loseFocusTap];
+    }
+    
+    self.dropDownMenu = [[MBView alloc] initWithFrame:CGRectMake(5, 60, 160, self.MenuItemHeight * self.items.count)];
     self.dropDownMenu.backgroundColor =  [UIColor whiteColor];
     self.dropDownMenu.BorderRadius = 3;
     self.dropDownMenu.TailHeight = 10;
-    self.dropDownMenu.TailOffset = -30;
+    self.dropDownMenu.TailOffset = -53;
     self.dropDownMenu.TailWidth = 30;
     self.dropDownMenu.TailPosition = 2;
     
@@ -155,7 +155,7 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
         
         UILabel* lbl = [[UILabel alloc] initWithFrame:CGRectMake(TITLE_OFFSET, 0, self.dropDownMenu.bounds.size.width - TITLE_OFFSET, self.MenuItemHeight)];
         lbl.text = item.title;
-        lbl.textColor = self.tintColor;
+        lbl.textColor = self.textColor;
         lbl.font  = [UIFont fontWithName:@"Verdana" size:12];
         [itemVw addSubview:lbl];
         
@@ -220,4 +220,11 @@ double SHOW_MENU_ANIMATION_LENGTH = 0.25;
                      }];
 }
 
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if(!self.dropDownMenu) return NO;
+    
+    CGPoint locInView = [touch locationInView:[[UIApplication sharedApplication] keyWindow]];
+    
+    return !CGRectContainsPoint(self.dropDownMenu.frame, locInView);
+}
 @end

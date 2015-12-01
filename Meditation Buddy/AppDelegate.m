@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MBData.h"
+#import "MBSessionData.h"
 
 #import <Fabric/Fabric.h>
 #import "MoPub.h"
@@ -34,8 +35,6 @@
     [UIUserNotificationSettings settingsForTypes:types categories:nil];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
-    
-    [MBData initialize];
     
     return YES;
 }

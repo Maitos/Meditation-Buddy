@@ -10,16 +10,12 @@
 #import "MBButtonGrid.h"
 #import "MBDropDownMenu.h"
 
-#import "MPInterstitialAdController.h"
-#import "MBAppPurchase.h"
+@interface HomeViewController : UIViewController <MBButtonGridDelegate, UIScrollViewDelegate>
 
-@interface HomeViewController : UIViewController <MBButtonGridDelegate, UIScrollViewDelegate,MPInterstitialAdControllerDelegate, MBDropDownMenuDelegate, MBAppPurchaseDelegate>
-
-@property (weak, nonatomic) IBOutlet MBView *bMeditate;
-@property (weak, nonatomic) IBOutlet MBDropDownMenu *bSideMenu;
 
 @property (weak, nonatomic) IBOutlet MBButtonGrid *bgSessionLength;
 
+@property (weak, nonatomic) IBOutlet UITabBar *tbNavigation;
 @property (weak, nonatomic) IBOutlet UILabel *lblMeditateFor;
 @property (weak, nonatomic) IBOutlet UILabel *lblRunStreak;
 @property (weak, nonatomic) IBOutlet UILabel *lblTotalTimeMeditating;
@@ -28,8 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblAverageMinutes;
 @property (weak, nonatomic) IBOutlet UILabel *lblBestRunStreak;
 @property (weak, nonatomic) IBOutlet MBView *vwMeditate;
-
-@property (nonatomic, retain) MPInterstitialAdController *interstitial;
 
 
 @end

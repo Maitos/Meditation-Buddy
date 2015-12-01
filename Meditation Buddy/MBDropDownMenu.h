@@ -14,10 +14,11 @@
 
 @end
 
-@interface MBDropDownMenu : UIView
+@interface MBDropDownMenu : UIBarButtonItem <UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) id<MBDropDownMenuDelegate> delegate;
 @property (nonatomic) IB_DESIGNABLE NSUInteger MenuItemHeight;
+@property (nonatomic, strong) IB_DESIGNABLE UIColor* textColor;
 
 @property (nonatomic, strong) NSMutableArray* items;
 

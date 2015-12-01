@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420E7B6D1BF1E74F00532036 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
 		42177FE21BE9FCD400B2994C /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E711BE9FCD400B2994C /* MPBannerAdManager.m */; };
 		42177FE31BE9FCD400B2994C /* MPBannerCustomEventAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E741BE9FCD400B2994C /* MPBannerCustomEventAdapter.m */; };
 		42177FE41BE9FCD400B2994C /* MPBaseBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42177E761BE9FCD400B2994C /* MPBaseBannerAdapter.m */; };
@@ -190,6 +189,8 @@
 		421E88391BA7FAB800BCDBAD /* MBData.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E88381BA7FAB800BCDBAD /* MBData.m */; };
 		421E883C1BA7FAE100BCDBAD /* Meditation.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E883B1BA7FAE100BCDBAD /* Meditation.m */; };
 		421E88401BA803CF00BCDBAD /* MBDataAttendant.m in Sources */ = {isa = PBXBuildFile; fileRef = 421E883F1BA803CF00BCDBAD /* MBDataAttendant.m */; };
+		42679A5D1C0D7CC50070EA31 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */; };
+		42679A601C0D87130070EA31 /* MBSessionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 42679A5F1C0D87130070EA31 /* MBSessionData.m */; };
 		4267A2F31BAC1E5B00D5F957 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4267A2F21BAC1E5B00D5F957 /* AudioToolbox.framework */; };
 		4267A2F51BAC1E6300D5F957 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4267A2F41BAC1E6300D5F957 /* AVFoundation.framework */; };
 		4267A2FA1BB2AFCD00D5F957 /* MBSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267A2F91BB2AFCD00D5F957 /* MBSound.m */; };
@@ -207,6 +208,20 @@
 		428A81021BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A80FF1BE9F9D3001B30A1 /* MPGoogleAdMobBannerCustomEvent.m */; };
 		428A81031BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 428A81011BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m */; };
 		42A3A5E61BDB9357009927C7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C426191BD1CF5F003DD7C8 /* Fabric.framework */; };
+		42A420B81C0C1A3D0061A742 /* yoga13.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420B71C0C1A3D0061A742 /* yoga13.png */; };
+		42A420BE1C0C1B130061A742 /* note55.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420BD1C0C1B130061A742 /* note55.png */; };
+		42A420C01C0C1F8D0061A742 /* note55@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420BF1C0C1F8D0061A742 /* note55@2x.png */; };
+		42A420C21C0C1FCC0061A742 /* yoga13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420C11C0C1FCC0061A742 /* yoga13@2x.png */; };
+		42A420C41C0C258F0061A742 /* menu48.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420C31C0C258F0061A742 /* menu48.png */; };
+		42A420C61C0C25C30061A742 /* menu48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420C51C0C25C30061A742 /* menu48@2x.png */; };
+		42A420C91C0C264E0061A742 /* rectangular9.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420C71C0C264E0061A742 /* rectangular9.png */; };
+		42A420CA1C0C264E0061A742 /* rectangular9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420C81C0C264E0061A742 /* rectangular9@2x.png */; };
+		42A420CD1C0C2C8E0061A742 /* clock125@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420CB1C0C2C8E0061A742 /* clock125@2x.png */; };
+		42A420CE1C0C2C8E0061A742 /* clock125.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420CC1C0C2C8E0061A742 /* clock125.png */; };
+		42A420D01C0C32AC0061A742 /* restore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420CF1C0C32AC0061A742 /* restore@2x.png */; };
+		42A420D21C0C33E70061A742 /* restore.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A420D11C0C33E70061A742 /* restore.png */; };
+		42A420D51C0C616A0061A742 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A420D41C0C616A0061A742 /* RootViewController.m */; };
+		42A420D71C0CF17A0061A742 /* Constants.h in Sources */ = {isa = PBXBuildFile; fileRef = 42A420D61C0CF17A0061A742 /* Constants.h */; };
 		42C4260D1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
 		42C4260E1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */ = {isa = PBXBuildFile; fileRef = 42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */; };
 		42C426141BCF902D003DD7C8 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C426101BCF902D003DD7C8 /* avatar.png */; };
@@ -601,6 +616,8 @@
 		421E883B1BA7FAE100BCDBAD /* Meditation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Meditation.m; path = ../Meditation.m; sourceTree = "<group>"; };
 		421E883E1BA803CF00BCDBAD /* MBDataAttendant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDataAttendant.h; sourceTree = "<group>"; };
 		421E883F1BA803CF00BCDBAD /* MBDataAttendant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDataAttendant.m; sourceTree = "<group>"; };
+		42679A5E1C0D87130070EA31 /* MBSessionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSessionData.h; sourceTree = "<group>"; };
+		42679A5F1C0D87130070EA31 /* MBSessionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSessionData.m; sourceTree = "<group>"; };
 		4267A2F21BAC1E5B00D5F957 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4267A2F41BAC1E6300D5F957 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4267A2F81BB2AFCD00D5F957 /* MBSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSound.h; sourceTree = "<group>"; };
@@ -631,6 +648,21 @@
 		428A81001BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGoogleAdMobInterstitialCustomEvent.h; sourceTree = "<group>"; };
 		428A81011BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGoogleAdMobInterstitialCustomEvent.m; sourceTree = "<group>"; };
 		428A81041BE9FA49001B30A1 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		42A420B71C0C1A3D0061A742 /* yoga13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoga13.png; sourceTree = "<group>"; };
+		42A420BD1C0C1B130061A742 /* note55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note55.png; sourceTree = "<group>"; };
+		42A420BF1C0C1F8D0061A742 /* note55@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note55@2x.png"; sourceTree = "<group>"; };
+		42A420C11C0C1FCC0061A742 /* yoga13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yoga13@2x.png"; sourceTree = "<group>"; };
+		42A420C31C0C258F0061A742 /* menu48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu48.png; sourceTree = "<group>"; };
+		42A420C51C0C25C30061A742 /* menu48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu48@2x.png"; sourceTree = "<group>"; };
+		42A420C71C0C264E0061A742 /* rectangular9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangular9.png; sourceTree = "<group>"; };
+		42A420C81C0C264E0061A742 /* rectangular9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rectangular9@2x.png"; sourceTree = "<group>"; };
+		42A420CB1C0C2C8E0061A742 /* clock125@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock125@2x.png"; sourceTree = "<group>"; };
+		42A420CC1C0C2C8E0061A742 /* clock125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock125.png; sourceTree = "<group>"; };
+		42A420CF1C0C32AC0061A742 /* restore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restore@2x.png"; sourceTree = "<group>"; };
+		42A420D11C0C33E70061A742 /* restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restore.png; sourceTree = "<group>"; };
+		42A420D31C0C616A0061A742 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		42A420D41C0C616A0061A742 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		42A420D61C0CF17A0061A742 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		42C4260C1BCF8847003DD7C8 /* endMeditationBell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = endMeditationBell.aif; sourceTree = "<group>"; };
 		42C426101BCF902D003DD7C8 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		42C426111BCF902D003DD7C8 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
@@ -663,12 +695,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420E7B6D1BF1E74F00532036 /* GoogleMobileAds.framework in Frameworks */,
 				42C9137A1BDB156C005BD2AA /* StoreKit.framework in Frameworks */,
 				4267A2F51BAC1E6300D5F957 /* AVFoundation.framework in Frameworks */,
 				4267A2F31BAC1E5B00D5F957 /* AudioToolbox.framework in Frameworks */,
 				42C913661BD8BFF3005BD2AA /* Crashlytics.framework in Frameworks */,
 				42A3A5E61BDB9357009927C7 /* Fabric.framework in Frameworks */,
+				42679A5D1C0D7CC50070EA31 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1198,12 +1230,11 @@
 		421E88331BA7F8E600BCDBAD /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				42679A611C0D87230070EA31 /* CoreData */,
 				421E883D1BA7FAE600BCDBAD /* Entities */,
-				421E88341BA7F91100BCDBAD /* Model.xcdatamodeld */,
-				421E88371BA7FAB800BCDBAD /* MBData.h */,
-				421E88381BA7FAB800BCDBAD /* MBData.m */,
-				421E883E1BA803CF00BCDBAD /* MBDataAttendant.h */,
-				421E883F1BA803CF00BCDBAD /* MBDataAttendant.m */,
+				42679A5E1C0D87130070EA31 /* MBSessionData.h */,
+				42679A5F1C0D87130070EA31 /* MBSessionData.m */,
+				42A420D61C0CF17A0061A742 /* Constants.h */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1215,6 +1246,18 @@
 				421E883B1BA7FAE100BCDBAD /* Meditation.m */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		42679A611C0D87230070EA31 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				421E88341BA7F91100BCDBAD /* Model.xcdatamodeld */,
+				421E88371BA7FAB800BCDBAD /* MBData.h */,
+				421E88381BA7FAB800BCDBAD /* MBData.m */,
+				421E883E1BA803CF00BCDBAD /* MBDataAttendant.h */,
+				421E883F1BA803CF00BCDBAD /* MBDataAttendant.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		4267A2EE1BAC19CF00D5F957 /* Assets */ = {
@@ -1322,6 +1365,8 @@
 		42845EF81B9828F50078BA26 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				42A420D31C0C616A0061A742 /* RootViewController.h */,
+				42A420D41C0C616A0061A742 /* RootViewController.m */,
 				42845ED91B9828710078BA26 /* HomeViewController.h */,
 				42845EDA1B9828710078BA26 /* HomeViewController.m */,
 				42845F031B9C09850078BA26 /* MeditateViewController.h */,
@@ -1349,6 +1394,18 @@
 		42C4260F1BCF901E003DD7C8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				42A420D11C0C33E70061A742 /* restore.png */,
+				42A420CF1C0C32AC0061A742 /* restore@2x.png */,
+				42A420CB1C0C2C8E0061A742 /* clock125@2x.png */,
+				42A420CC1C0C2C8E0061A742 /* clock125.png */,
+				42A420C71C0C264E0061A742 /* rectangular9.png */,
+				42A420C81C0C264E0061A742 /* rectangular9@2x.png */,
+				42A420C51C0C25C30061A742 /* menu48@2x.png */,
+				42A420C31C0C258F0061A742 /* menu48.png */,
+				42A420BF1C0C1F8D0061A742 /* note55@2x.png */,
+				42A420BD1C0C1B130061A742 /* note55.png */,
+				42A420C11C0C1FCC0061A742 /* yoga13@2x.png */,
+				42A420B71C0C1A3D0061A742 /* yoga13.png */,
 				42C9138C1BDB40F3005BD2AA /* maitland2.gif */,
 				42C913811BDB2DB2005BD2AA /* heart-b.png */,
 				42C913731BD90391005BD2AA /* userIcon.gif */,
@@ -1488,16 +1545,27 @@
 				42C4260D1BCF8847003DD7C8 /* endMeditationBell.aif in Resources */,
 				42C426141BCF902D003DD7C8 /* avatar.png in Resources */,
 				4217807B1BE9FCD400B2994C /* MPCloseBtn.png in Resources */,
+				42A420CA1C0C264E0061A742 /* rectangular9@2x.png in Resources */,
 				4217800D1BE9FCD400B2994C /* LICENSE in Resources */,
 				42845EDE1B9828710078BA26 /* Main.storyboard in Resources */,
 				421780811BE9FCD400B2994C /* MPDAAIcon.png in Resources */,
 				42C9136E1BD8F828005BD2AA /* userIcon.png in Resources */,
 				42C4262E1BD23D06003DD7C8 /* icon.png in Resources */,
+				42A420C21C0C1FCC0061A742 /* yoga13@2x.png in Resources */,
+				42A420C61C0C25C30061A742 /* menu48@2x.png in Resources */,
+				42A420B81C0C1A3D0061A742 /* yoga13.png in Resources */,
+				42A420CD1C0C2C8E0061A742 /* clock125@2x.png in Resources */,
 				421780881BE9FCD400B2994C /* MPPlayBtn@2x.png in Resources */,
 				421780821BE9FCD400B2994C /* MPDAAIcon@2x.png in Resources */,
+				42A420C91C0C264E0061A742 /* rectangular9.png in Resources */,
 				4217807E1BE9FCD400B2994C /* MPCloseButtonX.png in Resources */,
+				42A420C41C0C258F0061A742 /* menu48.png in Resources */,
+				42A420C01C0C1F8D0061A742 /* note55@2x.png in Resources */,
 				42C426321BD240AD003DD7C8 /* launchImage.png in Resources */,
 				4217807C1BE9FCD400B2994C /* MPCloseBtn@2x.png in Resources */,
+				42A420D01C0C32AC0061A742 /* restore@2x.png in Resources */,
+				42A420BE1C0C1B130061A742 /* note55.png in Resources */,
+				42A420D21C0C33E70061A742 /* restore.png in Resources */,
 				42C913741BD90391005BD2AA /* userIcon.gif in Resources */,
 				421780831BE9FCD400B2994C /* MPDAAIcon@3x.png in Resources */,
 				42845EE31B9828710078BA26 /* LaunchScreen.xib in Resources */,
@@ -1505,6 +1573,7 @@
 				4217807F1BE9FCD400B2994C /* MPCloseButtonX@2x.png in Resources */,
 				421780871BE9FCD400B2994C /* MPPlayBtn.png in Resources */,
 				4217808D1BE9FCD400B2994C /* MRAID.bundle in Resources */,
+				42A420CE1C0C2C8E0061A742 /* clock125.png in Resources */,
 				4217807D1BE9FCD400B2994C /* MPCloseBtn@3x.png in Resources */,
 				42845EE01B9828710078BA26 /* Images.xcassets in Resources */,
 			);
@@ -1576,6 +1645,7 @@
 				421780251BE9FCD400B2994C /* MPAnalyticsTracker.m in Sources */,
 				4217804F1BE9FCD400B2994C /* MPNativeAd+Internal.m in Sources */,
 				4217803A1BE9FCD400B2994C /* MPVASTManager.m in Sources */,
+				42679A601C0D87130070EA31 /* MBSessionData.m in Sources */,
 				428A81031BE9F9D3001B30A1 /* MPGoogleAdMobInterstitialCustomEvent.m in Sources */,
 				421780331BE9FCD400B2994C /* MPVASTCompanionAd.m in Sources */,
 				4217802A1BE9FCD400B2994C /* MPInternalUtils.m in Sources */,
@@ -1616,6 +1686,7 @@
 				421780271BE9FCD400B2994C /* MPGeolocationProvider.m in Sources */,
 				42177FE81BE9FCD400B2994C /* MPActivityViewControllerHelper.m in Sources */,
 				421780561BE9FCD400B2994C /* MPNativeView.m in Sources */,
+				42A420D51C0C616A0061A742 /* RootViewController.m in Sources */,
 				421780901BE9FCD400B2994C /* MPRewardedVideo.m in Sources */,
 				421E88401BA803CF00BCDBAD /* MBDataAttendant.m in Sources */,
 				421780471BE9FCD400B2994C /* MPInterstitialAdController.m in Sources */,
@@ -1628,6 +1699,7 @@
 				421780101BE9FCD400B2994C /* MPMRAIDInterstitialViewController.m in Sources */,
 				421780111BE9FCD400B2994C /* MRBridge.m in Sources */,
 				42177FED1BE9FCD400B2994C /* MPAdServerCommunicator.m in Sources */,
+				42A420D71C0CF17A0061A742 /* Constants.h in Sources */,
 				42177FEE1BE9FCD400B2994C /* MPAdServerURLBuilder.m in Sources */,
 				421780421BE9FCD400B2994C /* MoPub.m in Sources */,
 				42177FE51BE9FCD400B2994C /* MPAdAlertGestureRecognizer.m in Sources */,
@@ -1869,6 +1941,12 @@
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 				);
 				INFOPLIST_FILE = "Meditation Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1888,6 +1966,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
+					"$(PROJECT_DIR)/Meditation",
+					Buddy,
 					"$(PROJECT_DIR)/Meditation",
 					Buddy,
 					"$(PROJECT_DIR)/Meditation",
